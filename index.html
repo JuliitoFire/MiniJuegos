@@ -1,47 +1,46 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  Hello world
-  <script src="script.js"></script>
-</body>
-
-</html><!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emoji Rumble</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
         body {
-            text-align: center;
             font-family: Arial, sans-serif;
+            text-align: center;
         }
+
+        #game-frame {
+            border: 2px solid #ccc;
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
         .container {
             margin-top: 50px;
         }
+
         .emoji {
             font-size: 50px;
             cursor: pointer;
             padding: 20px;
         }
+
         .result {
             margin-top: 20px;
             font-size: 24px;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Emoji Rumble</h1>
-        <p>Choose your fighter!</p>
+    <h1>Welcome to Emoji Rumble!</h1>
+    <div id="game-frame" class="container">
+        <h2>Choose your fighter!</h2>
         <div>
             <span class="emoji" id="emoji1">💪</span>
             <span class="emoji" id="emoji2">🔥</span>
@@ -50,6 +49,8 @@
         <div class="result" id="result"></div>
     </div>
 
+    <!-- Tu archivo game.js vinculado correctamente -->
     <script src="game.js"></script>
 </body>
+
 </html>
